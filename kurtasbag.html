@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-sidebar/3.3.1/jquery.sticky-sidebar.min.js" integrity="sha512-5JnN0KAeC4m2DFuyFM/NooqJs5ZAGV/RQ27bS1ItFhFU8tMPTtEhF5utip7GlNRsoGS0qAGUJvcRiMmL0PYWjA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link href="home.css" rel="stylesheet">
+    <script src="home.js"></script>
+
+    <style>
+        .col-sm-6 Img{
+            height: 250px;
+            width: 100%;
+            margin: 3px;
+            transform: scale(1);
+            transition: 0.5s ease-in-out;
+            cursor:zoom-in;
+        }
+        .col-sm-6 Img:hover{
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+        .sizes button{
+            font-size: 15px;
+            background-color: white;
+            border-radius: 50%;
+            border:3px solid rgb(75, 11, 11);
+            height: 40px;
+            width: 40px;
+            
+             
+          
+        }
+        .sizes button:hover{
+            border-color: tomato;
+        }
+
+        .owl-nav .owl-prev{
+    position: absolute;
+    top:40%;
+    left: 5%;
+   
+    color: white !important;
+    font-size: 30px !important;
+    text-align: center;
+}
+.owl-nav .owl-next{
+    position: absolute;
+    top:40%;
+    right: 5%;
+   
+    color: white !important;
+    font-size: 30px !important;
+    text-align: center;
+}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg  bg-white conatainer-fluid">
+        <a class="navbar-brand" href="home.html"><img src="https://t4.ftcdn.net/jpg/03/34/53/51/360_F_334535136_vvbWaKEpsHIMS4dpJUxgXZL6clQX7VGs.jpg" width="130px" height="70px"></a>   
+        <button class="navbar-toggler"  data-toggle="collapse" data-target="#as">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="as">
+            <ul class="navbar-nav ">
+                <li class="nav-item as mt-2">men</a></li>
+                <li class="nav-item mt-2 womens">women</a></li>
+                <li class="nav-item mt-2 kids">kids</a></li>
+                <li class="nav-item mt-2 house">house living</a></li>
+                <li class="nav-item mt-2">studio</a></li>
+                <li class="nav-item">
+                    <form>
+                        <div class="input-group">
+                            <div class="input-group-prepend" >
+                                <div class="input-group-text" style="background-color: white;">
+                                    <i class="fa fa-search" aria-hidden="true" ></i>
+                                </div>
+                            </div>
+                            <input type="search"class="nav-link form-control" placeholder="search for products,brands">
+                        </div>
+                    </form>
+
+                    
+                </li>
+                <li class="nav-item"><a href="" class="nav-link" data-toggle="modal" data-target="#modalprofile"><i class="fa fa-user" aria-hidden="true" style="margin-left: 3px;" ><br> profile</i></a>
+                    <div class="modal fade" tabindex="-1" role="dialog" id="modalprofile">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title">Welcome</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <p>To access account and manage orders</p>
+                              <button class="btn btn-outline-primary" onclick="document.location='login.html'">LOGIN/SIGNUP</button><br>
+                              <div class="lists mt-3">
+                                <a href="" class="">Orders </a><br>
+                                <a href=""> Wishlist</a><br>
+                                <a href=""> Gift </a><br>
+                                <a href="">Cards</a><br>
+                                <a href="">Contact Us</a><br>
+
+                              </div>
+                            
+                            </div>
+                          
+                          </div>
+                        </div>
+                      </div>
+                </li>
+                <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-heart" aria-hidden="true"><br>whishlist</i></a></li>
+                <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-shopping-bag" aria-hidden="true"><br> bag</i></a></li>
+               
+                
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid menitems mx-3 " >
+        <div class="row my-2">
+            <div class="col-md-3 col-sm-4  col-6 pt-2">
+                <h3 class="display-6">Topwear</h3><br>
+                <a href="TSHIRTS1.HTML">T-Shirts</a><br>
+                <a href="">Casual Shirts</a><br>
+                <a href="">Formal Shirts</a><br>
+                <a href="">Sweatshirts</a><br>
+                <a href="">Sweaters</a><br>
+                <a href="">Jackets</a><br>
+                <a href="">Blazers & Coats</a><br>
+                <a href="">Suits</a><br>
+                <a href="">Rain Jackets</a>
+                    
+            </div>
+            <div class="col-md-3 col-sm-4 col-6  pt-2 bg-light">
+                <h3>Bottomwear</h3><br>
+                <a href="">Jeans</a><br>
+                <a href="">Casual Trousers</a><br>
+                <a href="">Formal Trousers</a><br>
+                <a href=""> Shorts</a><br>
+                <a href="">Track Pants & Joggers</a><br>
+               
+                    
+            </div>
+            <div class="col-md-3 col-sm-4 col-6  pt-2 ">
+                <h3>Footwear</h3><br>
+                <a href="">Casual Shoes</a><br>
+                <a href="">Sports Shoes</a><br>
+                <a href="">Formal Shoes</a><br>
+                <a href="">Sneakers</a><br>
+                <a href="">Sandals & Floaters</a><br>
+                <a href="">Flip Flops</a><br>
+                <a href="">Socks</a><br>
+               
+                    
+            </div>
+            <div class="col-md-3 col-sm-4 col-6  pt-2 bg-light">
+                <h3>Sports & Active Wear</h3><br>
+                <a href="">Sports Shoes</a><br>
+                <a href="">Sports Sandals</a><br>
+                <a href="">Active T-Shirts</a><br>
+                <a href="">Track Pants & Shorts</a><br>
+                <a href="">Tracksuits</a><br>
+                <a href="">Jackets & Sweatshirts</a><br>
+                <a href="">Sports Accessories</a><br>
+                <a href="">Swimwear</a><br>
+                
+                    
+            </div>
+        </div>   
+        <div class="row ">
+            <div class="col-md-3 col-sm-4  pt-2 col-6 ">
+                <h3>Fashion Accessories</h3><br>
+                <a href="">Wallets</a><br>
+                <a href="">Belts</a><br>
+                <a href="">Perfumes & Body Mists</a><br>
+                <a href="">Trimmers</a><br>
+                <a href=""> Deodorants</a><br>
+                <a href="">Ties, Cufflinks & Pocket Squares</a><br>
+                <a href="">Accessory Gift Sets</a><br>
+                <a href="">Helmets</a><br>
+                <a href="">Phone Cases</a>
+                    
+            </div>    
+            <div class="col-md-3 col-sm-4  col-6  pt-2 bg-light">
+                <h3>Indian & Festive Wear</h3><br>
+                <a href="">Kurtas & Kurta Sets</a><br>
+                <a href="">Sherwanis</a><br>
+                <a href="">Nehru Jackets</a><br>
+                <a href=""> Dhotis</a><br>
+                
+                    
+            </div>
+            <div class="col-md-3 col-sm-4  col-6 pt-2">
+                <h3>Innerwear & Sleepwear</h3><br>
+                <a href=""> Briefs & Trunks</a><br>
+                <a href="">Boxers</a><br>
+                <a href="">Vests</a><br>
+                <a href=""> Sleepwear & Loungewear</a><br>
+                
+                    
+            </div> 
+            <div class="col-md-3 col-sm-4  col-6  pt-2 bg-light">
+                <h3>Gadgets</h3><br>
+                <a href=""> Smart Wearables</a><br>
+                <a href="">Fitness Gadgets</a><br>
+                <a href="">Headphones</a><br>
+                <a href=""> Speakers</a><br>
+                
+                    
+            </div> 
+        </div>
+    </div>
+
+
+    <div class="container-fluid womensitems mx-3">
+        <div class="row my-2">
+            <div class="col-md-3 col-sm-4  col-6 pt-2">
+                <h3 class="display-6">Indian & Fusion Wear</h3><br>
+                <a href="kurthas.html">Kurtas & Suits</a><br>
+                <a href="">Kurtis, Tunics & Tops</a><br>
+                <a href="">Ethnic Wear</a><br>
+                <a href="">Leggings, Salwars & Churidars</a><br>
+                <a href="">Skirts & Palazzos</a><br>
+                <a href="">Sarees</a><br>
+                <a href="">Dress Materials</a><br>
+                <a href="">Dupattas & Shawls</a><br>
+                <a href=""> Jackets</a>
+                    
+            </div>
+            <div class="col-md-3 col-sm-4 col-6  pt-2 bg-light">
+                <h3>Western Wear</h3><br>
+                <a href="">Dresses</a><br>
+                <a href="">Jeans</a><br>
+                <a href="">Sweaters & Sweatshirts</a><br>
+                <a href="">Tops</a><br>
+                <a href="">Shorts & Skirts</a><br>
+                <a href="">Blazers & Waistcoats</a>
+                <a href="">Trousers & Capris</a>
+               
+                    
+            </div>
+            <div class="col-md-3 col-sm-4 col-6  pt-2 ">
+                <h3>Footwear</h3><br>
+                <a href="">Flats</a><br>
+                <a href="">Casual Shoes</a><br>
+                <a href="">Formal Shoes</a><br>
+                <a href="">Heels</a><br>
+                <a href="">Boots</a><br>
+                <a href="">Sports Shoes & Floaters</a><br>
+                
+                    
+            </div>
+            <div class="col-md-3 col-sm-4 col-6  pt-2 bg-light">
+                <h3>Gadgets</h3><br>
+                <a href="">Smart Wearables</a><br>
+                <a href="">Fitness Gadgets</a><br>
+                <a href="">Headphones</a><br>
+                <a href="">Speakers</a><br>
+                
+                
+                    
+            </div>
+        </div>   
+        <div class="row ">
+            <div class="col-md-3 col-sm-4  pt-2 col-6 ">
+                <h3>Sports & Active Wear</h3><br>
+                <a href="">Clothing</a><br>
+                <a href="">Footwear</a><br>
+                <a href="">Sports Accessories</a><br>
+                <a href="">Sports Equipment</a><br>
+                
+            </div>    
+            <div class="col-md-3 col-sm-4  col-6  pt-2 bg-light">
+                <h3>Beauty & Personal Care</h3><br>
+                <a href="">Makeup</a><br>
+                <a href="">Skincare</a><br>
+                <a href="">Premium Beauty</a><br>
+                <a href=""> Lipsticks</a><br>
+                
+                    
+            </div>
+            <div class="col-md-3 col-sm-4  col-6 pt-2">
+                <h3>Jewellery</h3><br>
+                <a href=""> Fashion Jewellery</a><br>
+                <a href="">Fine Jewellery</a><br>
+                <a href="">Earrings</a><br>
+                
+                
+                    
+            </div> 
+          
+        </div>
+    </div>
+
+    
+    <div class="container-fluid kidsitems mx-3">
+        <div class="row my-2">
+            <div class="col-md-3 col-sm-4  col-6 pt-2">
+                <h3 class="display-6">Boys Clothing</h3><br>
+                <a href="">T-Shirts</a><br>
+                <a href="">Shirts</a><br>
+                <a href="">Shorts</a><br>
+                <a href="kidboys.html">Jeans</a><br>
+                <a href="">Trousers</a><br>
+                <a href="">Nightwear & Loungewear</a><br>
+                <a href="">Track Pants & Pyjamas</a><br>
+                <a href="">Ethnic Wear</a><br>
+                <a href="">Party Wear</a>
+                    
+            </div>
+            <div class="col-md-3 col-sm-4 col-6  pt-2 bg-light">
+                <h3>Girls Clothing</h3><br>
+                <a href=""> Dresses</a><br>
+                <a href="">Tshirts</a><br>
+                <a href="">Tops</a><br>
+                <a href=""> Clothing Sets</a><br>
+                <a href="">Tights & Leggings</a><br>
+                <a href="">Skirts & shorts</a>
+                <a href=""> Nightwear & Loungewear</a>
+                <a href="">Innerwear & Thermals</a>
+                <a href=""> Kurta Sets</a>
+               
+                    
+            </div>
+            <div class="col-md-3 col-sm-4 col-6  pt-2 ">
+                <h3>Kids Accessories</h3><br>
+                <a href=""> Bags & Backpacks</a><br>
+                <a href="">Watches</a><br>
+                <a href="">Jewellery & Hair accessory</a><br>
+                <a href="">Caps & Hats</a><br>
+                <a href="">Masks & Protective Gears</a><br>
+                <a href="">Sunglasses</a><br>
+                
+               
+                    
+            </div>
+            <div class="col-md-3 col-sm-4 col-6  pt-2 bg-light">
+                <h3>Toys</h3><br>
+                <a href="">Learning & Development</a><br>
+                <a href="">Activity Toys</a><br>
+                <a href="">Soft Toys</a><br>
+                <a href="">Action Figure / Play set</a><br>
+              
+                    
+            </div>
+        </div>   
+        
+    </div>
+
+    
+    <div class="container-fluid houseitems mx-3">
+        <div class="row my-2">
+            <div class="col-md-3 col-sm-4  col-6 pt-2">
+                <h3 class="display-6">Bed Linen & Furnishing</h3><br>
+                <a href="">Bedsheets</a><br>
+                <a href="">Bedding Sets</a><br>
+                <a href=""> Blankets, Quilts & Dohars</a><br>
+                <a href="">Bed Covers</a><br>
+                <a href="">Sofa Covers</a><br>
+                <a href="">Chair Pads & Covers</a><br>
+                <a href="">Diwan Sets</a><br>
+                <a href="">Pillows & Pillow Covers</a><br>
+               
+                    
+            </div>
+            <div class="col-md-3 col-sm-4 col-6  pt-2 bg-light">
+                <h3>Bath</h3><br>
+                <a href=""> Bath Towels</a><br>
+                <a href="">Hand & Face Towels</a><br>
+                <a href="">Beach Towels</a><br>
+                <a href=""> Towels Set</a><br>
+                <a href="">Bath Robes</a><br>
+                <a href="">Skirts & shorts</a>
+                <a href="">  Bathroom Accessories</a>
+                <a href="">Bath Rugs</a>
+                
+               
+                    
+            </div>
+            <div class="col-md-3 col-sm-4 col-6  pt-2 ">
+                <h3>Home Décor</h3><br>               
+                <a href="">Plants & Planters</a><br>
+                <a href="">Aromas & Candles</a><br>
+                <a href=""> Clocks</a><br>
+                <a href=""> Mirrors</a><br>
+                <a href="">Wall Décor</a><br>
+                <a href=""> Wall Shelves</a><br>
+                
+               
+                    
+            </div>
+            <div class="col-md-3 col-sm-4 col-6  pt-2 bg-light">
+                <h3>Kitchen & Table</h3><br> 
+                <a href=""> Dinnerware & Serveware</a><br>
+                <a href="">Cups and Mugs</a><br>
+                <a href=""> Bakeware & Cookware</a><br>
+                <a href="">Kitchen Storage & Tools</a><br>
+                <a href="">Table Covers & Furnishings</a>
+              
+                    
+            </div>
+        </div>   
+        
+    </div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-8">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/10297647/2021/1/21/8548a7ff-1c4e-476d-9cf3-5496bc5e3c8f1611224460739-Anouk-Navy-Blue-Striped-Rayon-Straight-Kurta-With-Pompom-Lac-1.jpg" class="d-block w-100">
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/10297647/2021/1/21/e5261d0a-4b48-48e5-9940-afbc80a910e51611224460722-Anouk-Navy-Blue-Striped-Rayon-Straight-Kurta-With-Pompom-Lac-2.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/10297647/2021/1/21/e90e365a-553c-4e35-a1f3-e74dc3fd74741611224460703-Anouk-Navy-Blue-Striped-Rayon-Straight-Kurta-With-Pompom-Lac-3.jpg" class="d-block w-100">
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/10297647/2021/1/21/11ad901e-ae22-4a8b-a3c9-f76403ed42591611224460685-Anouk-Navy-Blue-Striped-Rayon-Straight-Kurta-With-Pompom-Lac-4.jpg" class="d-block w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 text-center">
+            <h2 class="text-center">Moda Rapido</h2><br>
+            <h4>Womes Maroon Printed Cotton Kurtas</h4> 
+            <hr>
+            
+            <h4>Rs. 314 <del>Rs.899 <span class="text-danger">(65% 0ff)</span></del></h4>
+            <h6>Inclusive of all taxes </h6>
+            <br>
+            <h5><U><i>SELECT SIZE</i></U></h5><br>
+            <div class="sizes">
+               <button>S</button>
+               <button>M</button>
+               <button>L</button>
+               <button>XL</button>
+               <button>XXL</button>
+            </div> 
+            <br>
+
+            <button class="btn btn-warning" style="font-size: 18px;color: white;"><i class="fa fa-shopping-bag" aria-hidden="true"></i>  ADD TO CART</button>
+            <button class="btn btn-info" style="font-size: 18px;color: white;"><i class="fa fa-heart" aria-hidden="true"></i>  WHISHLISTT</button>
+       </div>
+           
+        
+        
+    </div>
+</div>
+
+<div class="container-fluid my-3">
+    <div class="row" >
+        <div class="col-sm-12 text-center">
+            <h2  class="display-6 text-info">See Similer Products</h2>
+        </div>
+        <div class="owl-carousel owl-theme mt-3">
+            <div class="item"><img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/2322979/2018/2/13/11518506064968-Anouk-Women-Peach-Coloured-Printed-Straight-Kurta-6851518506064751-1.jpg" height="200px"></div>
+            <div class="item"><img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/15662182/2021/10/25/0027066c-01ca-459c-a896-4369715308d31635139937929-Cotton-Silk-Printed-Long-Kurta-5491635139937348-1.jpg" height="200px"></div>
+            <div class="item"><img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/13515828/2021/3/9/3c9ae2a6-d702-460e-8112-fe9327794a891615295030445IndoEraNavyBlueSolidStraightKurtaTrouserWithDupattaSets1.jpg" height="200px"></div>
+            <div class="item"><img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/9329399/2019/4/24/8df4ed41-1e43-4a0d-97fe-eb47edbdbacd1556086871124-Libas-Women-Kurtas-6161556086869769-1.jpg" height="200px"></div>
+            <div class="item"><img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/16072014/2021/11/12/f9540b62-54a5-4b74-882d-fde6f35cb2d21636707890575FASHORWomenLavenderStripedKeyholeNeckThreadWorkKurta1.jpg" height="200px"></div>
+            <div class="item"><img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2020/10/14/138821d7-96e5-4972-9c09-6bbe7026828e1602633543475-1.jpg" height="200px"></div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" style="background-color: mistyrose;">
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <div class="social-icons">
+                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-envelope" aria-hidden="true"></i></a>
+            </div>
+            
+        </div>
+    </div>
+</div>  
+
+
+<script>
+    $('.owl-carousel').owlCarousel({
+                loop:true,
+                autoplay:true,
+                nav:true,
+                autoplayTimeout:1500,
+                dots:false,
+                margin:5,
+                center:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:3
+                    },
+                    1000:{
+                        items:4
+                    }
+                }       
+            })
+</script>
+</body>
+</html>
